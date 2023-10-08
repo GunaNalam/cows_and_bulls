@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    />
+    <script src="cows_and_bulls.js"></script>
+  </head>
+
+  <body>
+    <div class="container-fluid pb-5" style="background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="display-3 pl-5">Cows and Bulls </h2>
+        </div>
+      </div>
+      <div class="row mt-4 w-75">
+        <div class="offset-6 col-5" >
+          <div class="row mt-3">
+            <div class="col-3"><span class="float-end pt-1">Number: </span></div>
+            <div class="col-8">
+              <div class="form-group">
+                <input type="number" class="form-control" onkeyup="input(this)">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 w-75">
+        <div class="offset-6 col-5  shadow">
+          <div class='row border py-3'>
+            <div class='col-6 fs-4  fw-bold'>Entered Number</div>
+            <div class='col-6 pl-5 fs-4 fw-bold '>Matched (C/B)</div>
+          </div>
+        </div>
+        <div class="offset-6 col-5  shadow" id="ressult"></div>
+      </div>
+    </div>
+  </body>
+</html>
