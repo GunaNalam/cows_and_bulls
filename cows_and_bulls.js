@@ -64,7 +64,7 @@ function input(e) {
     document.getElementById("ressult").innerHTML =
       `<div class='row pt-2 border-bottom border-right border-left' id='wholeContent-${NumberId}'>
         <div class='col-6 fs-4'>${e.value}</div>
-        <div class='col-6 fs-4'>${temp}<button class="btn btn-danger float-end" onclick="close1(wholeContent-${NumberId})">X</button></div>
+        <div class='col-6 fs-4'>${temp}<button class="btn btn-danger float-end" onclick="close1('wholeContent-${NumberId}')">X</button></div>
       </div>` + document.getElementById("ressult").innerHTML;
     if (temp == "4C  0B") {
       alert("Congratulations you have guessed the number correctly!!");
