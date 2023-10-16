@@ -13,10 +13,17 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     />
     <script src="cows_and_bulls.js"></script>
+    <style>
+      html,body{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);;
+      }
+    </style>
   </head>
 
   <body>
-    <div class="container-fluid pb-5" style="background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);">
+    <div class="container-fluid pb-5">
       <div class="row">
         <div class="col-12 text-center">
           <h2 class="display-3 pl-5">Cows and Bulls </h2>
@@ -34,14 +41,59 @@
           </div>
         </div>
       </div>
-      <div class="row mt-5 w-75">
-        <div class="offset-6 col-5  shadow">
-          <div class='row border py-3'>
-            <div class='col-6 fs-4  fw-bold'>Entered Number</div>
-            <div class='col-6 pl-5 fs-4 fw-bold '>Matched (C/B)</div>
+      <div class="row w-25 pt-5 float-end">
+        <div class="col-2 shadow">
+          <div class="form-check pt-2">
+            <input type="checkbox" class="form-check-input" onclick="stricking(this,'0')">
+            <div class="form-check-label" id="0">0</div>
+          </div>
+          <div class="form-check pt-2">
+            <input type="checkbox" class="form-check-input" onclick="stricking(this,'1')">
+            <div class="form-check-label" id="1">1</div>
+          </div>
+          <div class="form-check pt-2">
+            <input type="checkbox" class="form-check-input" onclick="stricking(this,'2')">
+            <div class="form-check-label" id="2">2</div>
+          </div>
+          <div class="form-check pt-2">
+            <input type="checkbox" class="form-check-input" onclick="stricking(this,'3')">
+            <div class="form-check-label" id="3">3</div>
+          </div>
+          <div class="form-check pt-2">
+            <input type="checkbox" class="form-check-input" onclick="stricking(this,'4')">
+            <div class="form-check-label" id="4">4</div>
+          </div>
+          <div class="form-check pt-2">
+            <input type="checkbox" class="form-check-input" onclick="stricking(this,'5')">
+            <div class="form-check-label" id="5">5</div>
+          </div>
+          <div class="form-check pt-2">
+            <input type="checkbox" class="form-check-input" onclick="stricking(this,'6')">
+            <div class="form-check-label" id="6">6</div>
+          </div>
+          <div class="form-check pt-2">
+            <input type="checkbox" class="form-check-input" onclick="stricking(this,'7')">
+            <div class="form-check-label" id="7">7</div>
+          </div>
+          <div class="form-check pt-2">
+            <input type="checkbox" class="form-check-input" onclick="stricking(this,'8')">
+            <div class="form-check-label" id="8">8</div>
+          </div>
+          <div class="form-check pt-2">
+            <input type="checkbox" class="form-check-input" onclick="stricking(this,'9')">
+            <div class="form-check-label" id="9">9</div>
           </div>
         </div>
-        <div class="offset-6 col-5  shadow" id="ressult"></div>
+      </div>
+      <div class="row mt-5 w-75">
+        <div class="offset-6 col-5 shadow">
+          <div class='row border py-3'>
+            <div class='col-6 fs-4  fw-bold'>Entered Number</div>
+            <div class='col-6  fs-4 fw-bold '>Matched (C/B)</div>
+          </div>
+        </div>
+        <div class="offset-6 col-5 shadow" id="ressult">
+        </div>
       </div>
     </div>
   </body>
