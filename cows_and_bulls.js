@@ -46,8 +46,16 @@ function stricking(current_checked,e)
 {
     let d=document.getElementById(e)
     console.log(d);
-    if (current_checked.checked) d.style.textDecoration="line-through";
-    else d.style.textDecoration="none";
+    if (current_checked.checked) 
+    {
+      current_checked.checked=0
+      d.style.textDecoration="none";
+    }
+    else 
+    {
+      current_checked.checked=1
+      d.style.textDecoration="line-through";
+    }
 }
 
 
